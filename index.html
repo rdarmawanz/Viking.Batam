@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<title>VIKING DISTRIK BATAM</title>
+	</head>
+
+	<body style="background-color: white">
+		<!-- HEADER -->
+		<header>
+			<div class="w3-container w3-center" style="background-color: #00008B">
+	            <a href="index.html"><img id="logo" src="img/logovb.png" alt="logo"></a>
+	            <h4 id="title-header">OFFICIAL VIKING DISTRIK BATAM</h4>
+			</div>
+		</header>
+
+		<!-- slideshow -->
+		<div class="w3-content w3-section" style="max-width:500px">
+			<img id="slider" class="mySlides w3-animate-fading" src="img/slider1.jpg">
+			<img id="slider" class="mySlides w3-animate-fading" src="img/slider2.jpg">
+		</div>
+
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 9000);    
+			}
+		</script>
+
+		<!-- MENU -->
+		<section class="menu">
+			<div class="w3-container w3-round-xlarge" style="margin: 10px 40px">
+				<div class="w3-row-padding">
+					<div class="w3-col s4 l2 w3-center">
+						<div class="box">
+                 			<a href="#">
+                    			<img id="icon" src="img/profil.png" alt="user">
+                    			<p id="title1"><b>Profil</b></p>
+                 			</a>
+                		</div>
+					</div>
+					<div class="w3-col s4 l2 w3-center">
+                 		<div class="box">
+                 			<a href="#">
+                    			<img id="icon" src="img/agenda.png" alt="user">
+                    			<p id="title1"><b>Agenda</b></p>
+                 			</a>
+                		</div>
+					</div>
+					<div class="w3-col s4 l2 w3-center">
+						<div class="box">
+                 			 <a href="#">
+                    			<img id="icon" src="img/galeri.png" alt="user">
+                    			<p id="title1"><b>Galeri</b></p>
+                 			 </a>
+                		</div>
+					</div>
+					<div class="w3-col s4 l2 w3-center">
+						<div class="box">
+                 			<a href="https://goo.gl/maps/t5SyWdmAhQpHDWHr5" target="_Blank"> 
+                    			<img id="icon" src="img/kantor.png" alt="user">
+                    			<p id="title1"><b>Lokasi</b></p>
+                 			</a>
+                		</div>
+					</div>
+					<div class="w3-col s4 l2 w3-center">
+                 		<div class="box">
+                 			<a href="#">
+                    			<img id="icon" src="img/struktur.png" alt="user">
+                    			<p id="title1"><b>Struktur</b></p>
+                 			</a>
+                		</div>
+					</div>
+					<div class="w3-col s4 l2 w3-center">
+						<div class="box">
+                 			 <a href="#">
+                    			<img id="icon" src="img/website.png" alt="user">
+                    			<p id="title1"><b>Website</b></p>
+                 			 </a>
+                		</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer>
+        	<div class="w3-container w3-center w3-bottom" style="background-color: #00008B"> 
+                <div class="w3-row">
+                	<div class="w3-col w3-display-middle">
+                		<h6 id="title-footer w3-black">Follow Us on Our Social Media</h6>
+                    	<a href="https:/wa.me/6285765585338" target="_Blank">
+                     		<img src="img/wa.png" alt="wa" id="sosmed">
+                    	</a>
+                    	<a href="https://facebook.com/vikingbatam" target="_Blank">
+                    		<img src="img/fb.png" alt="fb" id="sosmed">
+                    	</a>
+                    	<a href="https://instagram.com/vikingbatam"target="_Blank">
+                      		<img src="img/ig.png" alt="ig" id="sosmed">
+                    	</a>
+                    	<a href="https://twitter.com/vikingbatam" target="_Blank">
+                    		<img src="img/tw.png" alt="tw" id="sosmed">
+                    	</a>
+                    	<a href="https://www.youtube.com/@VikingBatamChannel/" target="_Blank">
+                    		<img src="img/yt.png" alt="yt" id="sosmed">
+                    	</a>
+                  	</div>
+                </div>
+            </div>  
+ 		</footer> 
+
+	</body>
+</html>
